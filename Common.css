@@ -19,200 +19,169 @@
 
 body.skin-vector {
   /*background-color: var(--rct-indian-red);*/
-  background: url("https://static.miraheze.org/rctwiki/0/01/Mowedgrass.png"); }
-
-body.skin-vector #mw-page-base {
-  /*background-color: var(--rct-indian-red);
-  background-image: none;*/
-  background: none; }
-
-body.skin-vector .mw-body {
-  background-color: var(--rct-white);
-  border-top: 1px solid var(--rct-white-lighter);
-  border-left-color: var(--rct-white-lighter);
-  border-right-color: var(--rct-white-darker);
-  border-bottom-color: var(--rct-white-darker); }
-
-/* Tabs like Main page, Discussion, etc. */
-body.skin-vector #left-navigation,
-body.skin-vector #right-navigation {
-  margin-top: calc(2.5em - 2px); }
-
-body.skin-vector #left-navigation {
-  padding-left: 3px; }
-
-body.skin-vector #left-navigation .vector-menu-tabs,
-body.skin-vector #right-navigation .vector-menu-tabs {
-  background-image: none; }
-
-body.skin-vector #left-navigation ul.vector-menu-content-list li,
-body.skin-vector #right-navigation ul.vector-menu-content-list li,
-body.skin-vector #right-navigation .vector-menu-dropdown h3 {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px; }
-
-body.skin-vector #left-navigation ul.vector-menu-content-list li.selected,
-body.skin-vector #right-navigation ul.vector-menu-content-list li.selected {
-  background-color: var(--rct-white);
-  border-left: 1px solid var(--rct-white-lighter);
-  border-top: 1px solid var(--rct-white-lighter);
-  border-right: 1px solid var(--rct-white-darker);
-  border-bottom: 1px solid var(--rct-white); }
-
-body.skin-vector #left-navigation ul.vector-menu-content-list li:not(.selected),
-body.skin-vector #right-navigation ul.vector-menu-content-list li:not(.selected),
-body.skin-vector #right-navigation .vector-menu-dropdown h3 {
-  background-color: var(--rct-white-inactive-tab-background);
-  border-left: 1px solid var(--rct-white-lighter);
-  border-top: 1px solid var(--rct-white-lighter);
-  border-right: 1px solid var(--rct-white-inactive-tab-darker);
-  border-bottom: 1px solid var(--rct-white-inactive-tab-background);
-  background-image: none; }
-
-body.skin-vector #left-navigation ul.vector-menu-content-list li a,
-body.skin-vector #right-navigation ul.vector-menu-content-list li a,
-body.skin-vector #right-navigation .vector-menu-dropdown h3 {
-  background-image: none;
-  padding-top: 0.8em; }
-
-body.skin-vector #right-navigation .vector-menu-dropdown h3::after {
-  top: 0.3em; }
-
-body.skin-vector #right-navigation .vector-menu-dropdown h3 {
-  height: calc(3.07692308em + 2px); }
-
-body.skin-vector .mw-watchlink a {
-  height: 3.07692308em !important;
-  color: transparent;
-  padding-top: 0; }
-
-/* Navigation boxes on the left */
-body.skin-vector #mw-panel nav {
-  background-color: var(--rct-indian-red);
-  border: 1px solid;
-  border-top-color: var(--rct-indian-red-lighter);
-  border-left-color: var(--rct-indian-red-lighter);
-  border-right-color: var(--rct-indian-red-darker);
-  border-bottom-color: var(--rct-indian-red-darker);
-  padding-top: 0; }
-
-body.skin-vector #mw-panel nav + nav {
-  margin-top: 15px; }
-
-body.skin-vector #mw-panel nav h3 {
-  height: 12px;
-  margin: 0;
-  border: 1px solid;
-  border-top-color: var(--rct-indian-red-darker);
-  border-left-color: var(--rct-indian-red-darker);
-  border-right-color: var(--rct-indian-red-lighter);
-  border-bottom-color: var(--rct-indian-red-lighter);
-  background-color: var(--rct-dark-indian-red);
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  background-image: none;
-  line-height: 12px; }
-
-/* User links (top right) */
-body.skin-vector #p-personal li {
-  background-color: var(--rct-light-grey);
-  border: 1px solid;
-  border-top-color: var(--rct-light-grey-lighter);
-  border-left-color: var(--rct-light-grey-lighter);
-  border-right-color: var(--rct-light-grey-darker);
-  border-bottom-color: var(--rct-light-grey-darker);
-  color: white;
-  font-weight: bold;
-  min-height: 28px;
-  box-sizing: border-box;
-  position: relative;
-  padding-left: 5px;
-  padding-right: 5px; }
-
-body.skin-vector #p-personal li a {
-  color: white; }
-
-body.skin-vector li#pt-notifications-alert,
-body.skin-vector li#pt-notifications-notice,
-body.skin-vector li#pt-preferences,
-body.skin-vector li#pt-watchlist,
-body.skin-vector li#pt-betafeatures,
-body.skin-vector li#pt-userpage,
-body.skin-vector li#pt-login,
-body.skin-vector li#pt-logout,
-body.skin-vector li#pt-mytalk,
-body.skin-vector li#pt-anontalk,
-body.skin-vector li#pt-mycontris,
-body.skin-vector li#pt-anoncontribs {
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 0 !important;
-  width: 28px;
-  margin-left: 0.75em;
-  margin-right: 0 !important; }
-
-body.skin-vector #pt-notifications-alert {
-  background-image: url("https://static.miraheze.org/rctwiki/7/74/Notifications.png"); }
-
-body.skin-vector #pt-notifications-notice {
-  background-image: url("https://static.miraheze.org/rctwiki/4/4f/Newspaper.png"); }
-
-body.skin-vector li#pt-preferences {
-  background-image: url("https://static.miraheze.org/rctwiki/7/7d/Gears.png"); }
-
-body.skin-vector li#pt-watchlist {
-  background-image: url("https://static.miraheze.org/rctwiki/8/80/Watchlist-icon.png"); }
-
-body.skin-vector li#pt-betafeatures {
-  background-image: url("https://static.miraheze.org/rctwiki/3/3f/Beta.png"); }
-
-body.skin-vector li#pt-userpage {
-  background-image: url("https://static.miraheze.org/rctwiki/3/31/Guest2.png"); }
-
-body.skin-vector li#pt-login,
-body.skin-vector li#pt-logout {
-  background-image: url("https://static.miraheze.org/rctwiki/2/28/Entrance.png");
-  background-position-y: 0px; }
-
-body.skin-vector li#pt-mytalk,
-body.skin-vector li#pt-anontalk {
-  background-image: url("https://static.miraheze.org/rctwiki/c/c7/Chat.png"); }
-
-body.skin-vector li#pt-mycontris,
-body.skin-vector li#pt-anoncontribs {
-  background-image: url("https://static.miraheze.org/rctwiki/7/77/Shovel.png"); }
-
-body.skin-vector #pt-notifications-alert a,
-body.skin-vector #pt-notifications-notice a,
-body.skin-vector li#pt-preferences a,
-body.skin-vector li#pt-watchlist a,
-body.skin-vector li#pt-betafeatures a,
-body.skin-vector li#pt-userpage a,
-body.skin-vector li#pt-login a,
-body.skin-vector li#pt-logout a,
-body.skin-vector li#pt-mytalk a,
-body.skin-vector li#pt-anontalk a,
-body.skin-vector li#pt-mycontris a,
-body.skin-vector li#pt-anoncontribs a {
-  background-image: none;
-  width: 26px;
-  height: 26px;
-  position: static;
-  display: block;
-  margin: 0;
-  color: transparent;
-  padding: 0 !important; }
-
-body.skin-vector #pt-notifications-alert .mw-echo-notifications-badge::after,
-body.skin-vector #pt-notifications-notice .mw-echo-notifications-badge::after {
-  top: 55%; }
-
-/* Footer */
-body.skin-vector .mw-footer li {
-  color: #999999; }
-
-body.skin-vector .mw-footer li a {
-  color: #66a5ff; }
+  background: url("https://static.miraheze.org/rctwiki/0/01/Mowedgrass.png");
+  /* Tabs like Main page, Discussion, etc. */
+  /* Navigation boxes on the left */
+  /* User links (top right) */
+  /* Footer */ }
+  body.skin-vector #mw-page-base {
+    /*background-color: var(--rct-indian-red);
+    background-image: none;*/
+    background: none; }
+  body.skin-vector .mw-body {
+    background-color: var(--rct-white);
+    border-top: 1px solid var(--rct-white-lighter);
+    border-left-color: var(--rct-white-lighter);
+    border-right-color: var(--rct-white-darker);
+    border-bottom-color: var(--rct-white-darker); }
+  body.skin-vector #left-navigation,
+  body.skin-vector #right-navigation {
+    margin-top: calc(2.5em - 2px); }
+  body.skin-vector #left-navigation {
+    padding-left: 3px; }
+  body.skin-vector #left-navigation .vector-menu-tabs,
+  body.skin-vector #right-navigation .vector-menu-tabs {
+    background-image: none; }
+  body.skin-vector #left-navigation ul.vector-menu-content-list li,
+  body.skin-vector #right-navigation ul.vector-menu-content-list li,
+  body.skin-vector #right-navigation .vector-menu-dropdown h3 {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px; }
+  body.skin-vector #left-navigation ul.vector-menu-content-list li.selected,
+  body.skin-vector #right-navigation ul.vector-menu-content-list li.selected {
+    background-color: var(--rct-white);
+    border-left: 1px solid var(--rct-white-lighter);
+    border-top: 1px solid var(--rct-white-lighter);
+    border-right: 1px solid var(--rct-white-darker);
+    border-bottom: 1px solid var(--rct-white); }
+  body.skin-vector #left-navigation ul.vector-menu-content-list li:not(.selected),
+  body.skin-vector #right-navigation ul.vector-menu-content-list li:not(.selected),
+  body.skin-vector #right-navigation .vector-menu-dropdown h3 {
+    background-color: var(--rct-white-inactive-tab-background);
+    border-left: 1px solid var(--rct-white-lighter);
+    border-top: 1px solid var(--rct-white-lighter);
+    border-right: 1px solid var(--rct-white-inactive-tab-darker);
+    border-bottom: 1px solid var(--rct-white-inactive-tab-background);
+    background-image: none; }
+  body.skin-vector #left-navigation ul.vector-menu-content-list li a,
+  body.skin-vector #right-navigation ul.vector-menu-content-list li a,
+  body.skin-vector #right-navigation .vector-menu-dropdown h3 {
+    background-image: none;
+    padding-top: 0.8em; }
+  body.skin-vector #right-navigation .vector-menu-dropdown h3::after {
+    top: 0.3em; }
+  body.skin-vector #right-navigation .vector-menu-dropdown h3 {
+    height: calc(3.07692308em + 2px); }
+  body.skin-vector .mw-watchlink a {
+    height: 3.07692308em !important;
+    color: transparent;
+    padding-top: 0; }
+  body.skin-vector #mw-panel nav {
+    background-color: var(--rct-indian-red);
+    border: 1px solid;
+    border-top-color: var(--rct-indian-red-lighter);
+    border-left-color: var(--rct-indian-red-lighter);
+    border-right-color: var(--rct-indian-red-darker);
+    border-bottom-color: var(--rct-indian-red-darker);
+    padding-top: 0; }
+  body.skin-vector #mw-panel nav + nav {
+    margin-top: 15px; }
+  body.skin-vector #mw-panel nav h3 {
+    height: 12px;
+    margin: 0;
+    border: 1px solid;
+    border-top-color: var(--rct-indian-red-darker);
+    border-left-color: var(--rct-indian-red-darker);
+    border-right-color: var(--rct-indian-red-lighter);
+    border-bottom-color: var(--rct-indian-red-lighter);
+    background-color: var(--rct-dark-indian-red);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-image: none;
+    line-height: 12px; }
+  body.skin-vector #p-personal li {
+    background-color: var(--rct-light-grey);
+    border: 1px solid;
+    border-top-color: var(--rct-light-grey-lighter);
+    border-left-color: var(--rct-light-grey-lighter);
+    border-right-color: var(--rct-light-grey-darker);
+    border-bottom-color: var(--rct-light-grey-darker);
+    color: white;
+    font-weight: bold;
+    min-height: 28px;
+    box-sizing: border-box;
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px; }
+  body.skin-vector #p-personal li a {
+    color: white; }
+  body.skin-vector li#pt-notifications-alert,
+  body.skin-vector li#pt-notifications-notice,
+  body.skin-vector li#pt-preferences,
+  body.skin-vector li#pt-watchlist,
+  body.skin-vector li#pt-betafeatures,
+  body.skin-vector li#pt-userpage,
+  body.skin-vector li#pt-login,
+  body.skin-vector li#pt-logout,
+  body.skin-vector li#pt-mytalk,
+  body.skin-vector li#pt-anontalk,
+  body.skin-vector li#pt-mycontris,
+  body.skin-vector li#pt-anoncontribs {
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 !important;
+    width: 28px;
+    margin-left: 0.75em;
+    margin-right: 0 !important; }
+  body.skin-vector #pt-notifications-alert {
+    background-image: url("https://static.miraheze.org/rctwiki/7/74/Notifications.png"); }
+  body.skin-vector #pt-notifications-notice {
+    background-image: url("https://static.miraheze.org/rctwiki/4/4f/Newspaper.png"); }
+  body.skin-vector li#pt-preferences {
+    background-image: url("https://static.miraheze.org/rctwiki/7/7d/Gears.png"); }
+  body.skin-vector li#pt-watchlist {
+    background-image: url("https://static.miraheze.org/rctwiki/8/80/Watchlist-icon.png"); }
+  body.skin-vector li#pt-betafeatures {
+    background-image: url("https://static.miraheze.org/rctwiki/3/3f/Beta.png"); }
+  body.skin-vector li#pt-userpage {
+    background-image: url("https://static.miraheze.org/rctwiki/3/31/Guest2.png"); }
+  body.skin-vector li#pt-login,
+  body.skin-vector li#pt-logout {
+    background-image: url("https://static.miraheze.org/rctwiki/2/28/Entrance.png");
+    background-position-y: 0px; }
+  body.skin-vector li#pt-mytalk,
+  body.skin-vector li#pt-anontalk {
+    background-image: url("https://static.miraheze.org/rctwiki/c/c7/Chat.png"); }
+  body.skin-vector li#pt-mycontris,
+  body.skin-vector li#pt-anoncontribs {
+    background-image: url("https://static.miraheze.org/rctwiki/7/77/Shovel.png"); }
+  body.skin-vector #pt-notifications-alert a,
+  body.skin-vector #pt-notifications-notice a,
+  body.skin-vector li#pt-preferences a,
+  body.skin-vector li#pt-watchlist a,
+  body.skin-vector li#pt-betafeatures a,
+  body.skin-vector li#pt-userpage a,
+  body.skin-vector li#pt-login a,
+  body.skin-vector li#pt-logout a,
+  body.skin-vector li#pt-mytalk a,
+  body.skin-vector li#pt-anontalk a,
+  body.skin-vector li#pt-mycontris a,
+  body.skin-vector li#pt-anoncontribs a {
+    background-image: none;
+    width: 26px;
+    height: 26px;
+    position: static;
+    display: block;
+    margin: 0;
+    color: transparent;
+    padding: 0 !important; }
+  body.skin-vector #pt-notifications-alert .mw-echo-notifications-badge::after,
+  body.skin-vector #pt-notifications-notice .mw-echo-notifications-badge::after {
+    top: 55%; }
+  body.skin-vector .mw-footer li {
+    color: #999999; }
+  body.skin-vector .mw-footer li a {
+    color: #66a5ff; }
 
 /*# sourceMappingURL=Common.css.map */
