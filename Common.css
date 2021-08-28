@@ -29,7 +29,7 @@ body.skin-vector {
     background-image: none;*/
     background: none; }
   body.skin-vector .mw-body {
-    background-color: var(--rct-white);
+    background-color: var(whitesmoke);
     border-top: 1px solid var(--rct-white-lighter);
     border-left-color: var(--rct-white-lighter);
     border-right-color: var(--rct-white-darker);
@@ -49,11 +49,11 @@ body.skin-vector {
     border-top-right-radius: 4px; }
   body.skin-vector #left-navigation ul.vector-menu-content-list li.selected,
   body.skin-vector #right-navigation ul.vector-menu-content-list li.selected {
-    background-color: var(--rct-white);
+    background-color: var(whitesmoke);
     border-left: 1px solid var(--rct-white-lighter);
     border-top: 1px solid var(--rct-white-lighter);
     border-right: 1px solid var(--rct-white-darker);
-    border-bottom: 1px solid var(--rct-white); }
+    border-bottom: 1px solid var(whitesmoke); }
   body.skin-vector #left-navigation ul.vector-menu-content-list li:not(.selected),
   body.skin-vector #right-navigation ul.vector-menu-content-list li:not(.selected),
   body.skin-vector #right-navigation .vector-menu-dropdown h3 {

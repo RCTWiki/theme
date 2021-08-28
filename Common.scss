@@ -32,7 +32,7 @@ body.skin-vector
 
     .mw-body
     {
-        background-color: var(--rct-white);
+        background-color: var(whitesmoke);
         border-top: 1px solid var(--rct-white-lighter);
         border-left-color: var(--rct-white-lighter);
         border-right-color: var(--rct-white-darker);
@@ -75,11 +75,11 @@ body.skin-vector
     #left-navigation ul.vector-menu-content-list li.selected,
     #right-navigation ul.vector-menu-content-list li.selected
     {
-        background-color: var(--rct-white);
+        background-color: var(whitesmoke);
         border-left: 1px solid var(--rct-white-lighter);
         border-top: 1px solid var(--rct-white-lighter);
         border-right: 1px solid var(--rct-white-darker);
-        border-bottom: 1px solid var(--rct-white);
+        border-bottom: 1px solid var(whitesmoke);
     }
 
     #left-navigation ul.vector-menu-content-list li:not(.selected),
