@@ -15,7 +15,8 @@
   --rct-gold: #a76f07;
   --rct-gold-lighter: #bf8b0f;
   --rct-gold-darker: #773f00;
-  --rct-dark-gold: #4b2200; }
+  --rct-dark-gold: #4b2200;
+  --light-link: #66a5ff; }
 
 body.skin-vector,
 body.skin-vector-legacy {
@@ -32,7 +33,7 @@ body.skin-vector-legacy {
     background: none; }
   body.skin-vector .mw-body,
   body.skin-vector-legacy .mw-body {
-    background-color: var(whitesmoke);
+    background-color: #f5f5f5;
     border-top: 1px solid var(--rct-white-lighter);
     border-left-color: var(--rct-white-lighter);
     border-right-color: var(--rct-white-darker);
@@ -62,11 +63,11 @@ body.skin-vector-legacy {
   body.skin-vector #right-navigation ul.vector-menu-content-list li.selected,
   body.skin-vector-legacy #left-navigation ul.vector-menu-content-list li.selected,
   body.skin-vector-legacy #right-navigation ul.vector-menu-content-list li.selected {
-    background-color: var(whitesmoke);
+    background-color: #f5f5f5;
     border-left: 1px solid var(--rct-white-lighter);
     border-top: 1px solid var(--rct-white-lighter);
     border-right: 1px solid var(--rct-white-darker);
-    border-bottom: 1px solid var(whitesmoke); }
+    border-bottom: 1px solid #f5f5f5; }
   body.skin-vector #left-navigation ul.vector-menu-content-list li:not(.selected),
   body.skin-vector #right-navigation ul.vector-menu-content-list li:not(.selected),
   body.skin-vector #right-navigation .vector-menu-dropdown h3,
@@ -107,42 +108,46 @@ body.skin-vector-legacy {
     border-right-color: var(--rct-indian-red-darker);
     border-bottom-color: var(--rct-indian-red-darker);
     padding-top: 0; }
-  body.skin-vector #mw-panel nav + nav,
-  body.skin-vector-legacy #mw-panel nav + nav {
-    margin-top: 15px; }
-  body.skin-vector #mw-panel nav h3,
-  body.skin-vector-legacy #mw-panel nav h3 {
-    height: 12px;
-    margin: 0;
-    border: 1px solid;
-    border-top-color: var(--rct-indian-red-darker);
-    border-left-color: var(--rct-indian-red-darker);
-    border-right-color: var(--rct-indian-red-lighter);
-    border-bottom-color: var(--rct-indian-red-lighter);
-    background-color: var(--rct-dark-indian-red);
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    background-image: none;
-    line-height: 12px; }
-  body.skin-vector #p-personal li,
-  body.skin-vector-legacy #p-personal li {
-    background-color: var(--rct-light-grey);
-    border: 1px solid;
-    border-top-color: var(--rct-light-grey-lighter);
-    border-left-color: var(--rct-light-grey-lighter);
-    border-right-color: var(--rct-light-grey-darker);
-    border-bottom-color: var(--rct-light-grey-darker);
-    color: white;
-    font-weight: bold;
-    min-height: 28px;
-    box-sizing: border-box;
-    position: relative;
-    padding-left: 5px;
-    padding-right: 5px; }
-  body.skin-vector #p-personal li a,
-  body.skin-vector-legacy #p-personal li a {
-    color: white; }
+    body.skin-vector #mw-panel nav + nav,
+    body.skin-vector-legacy #mw-panel nav + nav {
+      margin-top: 15px; }
+    body.skin-vector #mw-panel nav h3,
+    body.skin-vector-legacy #mw-panel nav h3 {
+      height: 12px;
+      margin: 0;
+      border: 1px solid;
+      border-top-color: var(--rct-indian-red-darker);
+      border-left-color: var(--rct-indian-red-darker);
+      border-right-color: var(--rct-indian-red-lighter);
+      border-bottom-color: var(--rct-indian-red-lighter);
+      background-color: var(--rct-dark-indian-red);
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      background-image: none;
+      line-height: 12px; }
+    body.skin-vector #mw-panel nav a,
+    body.skin-vector-legacy #mw-panel nav a {
+      color: #fff;
+      border-bottom: 1px dotted; }
+  body.skin-vector #p-personal .vector-menu-content-list,
+  body.skin-vector-legacy #p-personal .vector-menu-content-list {
+    align-items: normal; }
+    body.skin-vector #p-personal .vector-menu-content-list li,
+    body.skin-vector-legacy #p-personal .vector-menu-content-list li {
+      background-color: var(--rct-light-grey);
+      border: 1px solid;
+      border-top-color: var(--rct-light-grey-lighter);
+      border-left-color: var(--rct-light-grey-lighter);
+      border-right-color: var(--rct-light-grey-darker);
+      border-bottom-color: var(--rct-light-grey-darker);
+      color: white;
+      font-weight: bold;
+      min-height: 28px;
+      box-sizing: border-box;
+      position: relative;
+      padding-left: 5px;
+      padding-right: 5px; }
   body.skin-vector li#pt-notifications-alert,
   body.skin-vector li#pt-notifications-notice,
   body.skin-vector li#pt-preferences,
@@ -155,6 +160,7 @@ body.skin-vector-legacy {
   body.skin-vector li#pt-anontalk,
   body.skin-vector li#pt-mycontris,
   body.skin-vector li#pt-anoncontribs,
+  body.skin-vector li#pt-createaccount,
   body.skin-vector-legacy li#pt-notifications-alert,
   body.skin-vector-legacy li#pt-notifications-notice,
   body.skin-vector-legacy li#pt-preferences,
@@ -166,13 +172,25 @@ body.skin-vector-legacy {
   body.skin-vector-legacy li#pt-mytalk,
   body.skin-vector-legacy li#pt-anontalk,
   body.skin-vector-legacy li#pt-mycontris,
-  body.skin-vector-legacy li#pt-anoncontribs {
+  body.skin-vector-legacy li#pt-anoncontribs,
+  body.skin-vector-legacy li#pt-createaccount {
     background-repeat: no-repeat;
     background-position: center;
     padding: 0 !important;
     width: 28px;
     margin-left: 0.75em;
     margin-right: 0 !important; }
+  body.skin-vector li#pt-anonuserpage,
+  body.skin-vector-legacy li#pt-anonuserpage {
+    /*padding: 0 !important;*/
+    margin-left: 0.75em;
+    margin-right: 0 !important;
+    background-size: initial;
+    background-position: 8px 2px;
+    padding-left: 28px !important; }
+    body.skin-vector li#pt-anonuserpage a,
+    body.skin-vector-legacy li#pt-anonuserpage a {
+      color: white; }
   body.skin-vector #pt-notifications-alert,
   body.skin-vector-legacy #pt-notifications-alert {
     background-image: url("https://static.miraheze.org/rctwiki/7/74/Notifications.png"); }
@@ -189,14 +207,16 @@ body.skin-vector-legacy {
   body.skin-vector-legacy li#pt-betafeatures {
     background-image: url("https://static.miraheze.org/rctwiki/3/3f/Beta.png"); }
   body.skin-vector li#pt-userpage,
-  body.skin-vector-legacy li#pt-userpage {
+  body.skin-vector li#pt-anonuserpage,
+  body.skin-vector-legacy li#pt-userpage,
+  body.skin-vector-legacy li#pt-anonuserpage {
     background-image: url("https://static.miraheze.org/rctwiki/3/31/Guest2.png"); }
   body.skin-vector li#pt-login,
   body.skin-vector li#pt-logout,
   body.skin-vector-legacy li#pt-login,
   body.skin-vector-legacy li#pt-logout {
     background-image: url("https://static.miraheze.org/rctwiki/2/28/Entrance.png");
-    background-position-y: 0px; }
+    background-position-y: 0; }
   body.skin-vector li#pt-mytalk,
   body.skin-vector li#pt-anontalk,
   body.skin-vector-legacy li#pt-mytalk,
@@ -207,6 +227,9 @@ body.skin-vector-legacy {
   body.skin-vector-legacy li#pt-mycontris,
   body.skin-vector-legacy li#pt-anoncontribs {
     background-image: url("https://static.miraheze.org/rctwiki/7/77/Shovel.png"); }
+  body.skin-vector li#pt-createaccount,
+  body.skin-vector-legacy li#pt-createaccount {
+    background-image: url("https://static.miraheze.org/rctwiki/9/97/CreateAccount.png"); }
   body.skin-vector #pt-notifications-alert a,
   body.skin-vector #pt-notifications-notice a,
   body.skin-vector li#pt-preferences a,
@@ -219,6 +242,7 @@ body.skin-vector-legacy {
   body.skin-vector li#pt-anontalk a,
   body.skin-vector li#pt-mycontris a,
   body.skin-vector li#pt-anoncontribs a,
+  body.skin-vector li#pt-createaccount a,
   body.skin-vector-legacy #pt-notifications-alert a,
   body.skin-vector-legacy #pt-notifications-notice a,
   body.skin-vector-legacy li#pt-preferences a,
@@ -230,7 +254,8 @@ body.skin-vector-legacy {
   body.skin-vector-legacy li#pt-mytalk a,
   body.skin-vector-legacy li#pt-anontalk a,
   body.skin-vector-legacy li#pt-mycontris a,
-  body.skin-vector-legacy li#pt-anoncontribs a {
+  body.skin-vector-legacy li#pt-anoncontribs a,
+  body.skin-vector-legacy li#pt-createaccount a {
     background-image: none;
     width: 26px;
     height: 26px;
@@ -249,6 +274,21 @@ body.skin-vector-legacy {
     color: #999999; }
   body.skin-vector .mw-footer li a,
   body.skin-vector-legacy .mw-footer li a {
-    color: #66a5ff; }
+    color: var(--light-link); }
+
+.main-page-game-thumbnail,
+.main-page-addon-thumbnail {
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px #222;
+  overflow: hidden; }
+
+.main-page-game-thumbnail {
+  width: 140px;
+  height: 140px; }
+
+.main-page-addon-thumbnail {
+  width: 120px;
+  height: 120px; }
 
 /*# sourceMappingURL=Common.css.map */

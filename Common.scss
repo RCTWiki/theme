@@ -16,13 +16,14 @@
     --rct-gold-lighter: #bf8b0f;
     --rct-gold-darker: #773f00;
     --rct-dark-gold: #4b2200;
+    --light-link: #66a5ff;
 }
 
 body.skin-vector,
 body.skin-vector-legacy
 {
     /*background-color: var(--rct-indian-red);*/
-    background: url('https://static.miraheze.org/rctwiki/0/01/Mowedgrass.png');
+    background: url("https://static.miraheze.org/rctwiki/0/01/Mowedgrass.png");
 
     #mw-page-base
     {
@@ -33,7 +34,7 @@ body.skin-vector-legacy
 
     .mw-body
     {
-        background-color: var(whitesmoke);
+        background-color: #f5f5f5;
         border-top: 1px solid var(--rct-white-lighter);
         border-left-color: var(--rct-white-lighter);
         border-right-color: var(--rct-white-darker);
@@ -76,11 +77,11 @@ body.skin-vector-legacy
     #left-navigation ul.vector-menu-content-list li.selected,
     #right-navigation ul.vector-menu-content-list li.selected
     {
-        background-color: var(whitesmoke);
+        background-color: #f5f5f5;
         border-left: 1px solid var(--rct-white-lighter);
         border-top: 1px solid var(--rct-white-lighter);
         border-right: 1px solid var(--rct-white-darker);
-        border-bottom: 1px solid var(whitesmoke);
+        border-bottom: 1px solid #f5f5f5;
     }
 
     #left-navigation ul.vector-menu-content-list li:not(.selected),
@@ -130,51 +131,56 @@ body.skin-vector-legacy
         border-right-color: var(--rct-indian-red-darker);
         border-bottom-color: var(--rct-indian-red-darker);
         padding-top: 0;
-    }
 
-    #mw-panel nav + nav
-    {
-        margin-top: 15px;
-    }
+        + nav
+        {
+            margin-top: 15px;
+        }
 
-    #mw-panel nav h3
-    {
-        height: 12px;
-        margin: 0;
-        border: 1px solid;
-        border-top-color: var(--rct-indian-red-darker);
-        border-left-color: var(--rct-indian-red-darker);
-        border-right-color: var(--rct-indian-red-lighter);
-        border-bottom-color: var(--rct-indian-red-lighter);
-        background-color: var(--rct-dark-indian-red);
-        color: white;
-        font-weight: bold;
-        text-align: center;
-        background-image: none;
-        line-height: 12px;
+        h3
+        {
+            height: 12px;
+            margin: 0;
+            border: 1px solid;
+            border-top-color: var(--rct-indian-red-darker);
+            border-left-color: var(--rct-indian-red-darker);
+            border-right-color: var(--rct-indian-red-lighter);
+            border-bottom-color: var(--rct-indian-red-lighter);
+            background-color: var(--rct-dark-indian-red);
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            background-image: none;
+            line-height: 12px;
+        }
+
+        a {
+            color: #fff;
+            border-bottom: 1px dotted;
+        }
     }
 
     /* User links (top right) */
-    #p-personal li
+    #p-personal .vector-menu-content-list
     {
-        background-color: var(--rct-light-grey);
-        border: 1px solid;
-        border-top-color: var(--rct-light-grey-lighter);
-        border-left-color: var(--rct-light-grey-lighter);
-        border-right-color: var(--rct-light-grey-darker);
-        border-bottom-color: var(--rct-light-grey-darker);
-        color: white;
-        font-weight: bold;
-        min-height: 28px;
-        box-sizing: border-box;
-        position: relative;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
+        align-items: normal;
 
-    #p-personal li a
-    {
-        color: white;
+        li
+        {
+            background-color: var(--rct-light-grey);
+            border: 1px solid;
+            border-top-color: var(--rct-light-grey-lighter);
+            border-left-color: var(--rct-light-grey-lighter);
+            border-right-color: var(--rct-light-grey-darker);
+            border-bottom-color: var(--rct-light-grey-darker);
+            color: white;
+            font-weight: bold;
+            min-height: 28px;
+            box-sizing: border-box;
+            position: relative;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
     }
 
     li#pt-notifications-alert,
@@ -183,13 +189,13 @@ body.skin-vector-legacy
     li#pt-watchlist,
     li#pt-betafeatures,
     li#pt-userpage,
-        /*li#pt-anonuserpage,*/
     li#pt-login,
     li#pt-logout,
     li#pt-mytalk,
     li#pt-anontalk,
     li#pt-mycontris,
-    li#pt-anoncontribs
+    li#pt-anoncontribs,
+    li#pt-createaccount
     {
         background-repeat: no-repeat;
         background-position: center;
@@ -199,54 +205,74 @@ body.skin-vector-legacy
         margin-right: 0 !important;
     }
 
+    li#pt-anonuserpage
+    {
+        /*padding: 0 !important;*/
+        margin-left: 0.75em;
+        margin-right: 0 !important;
+        background-size: initial;
+        background-position: 8px 2px;
+        padding-left: 28px !important;
+
+        a
+        {
+            color: white;
+        }
+    }
+
     #pt-notifications-alert
     {
-        background-image: url('https://static.miraheze.org/rctwiki/7/74/Notifications.png');
+        background-image: url("https://static.miraheze.org/rctwiki/7/74/Notifications.png");
     }
 
     #pt-notifications-notice
     {
-        background-image: url('https://static.miraheze.org/rctwiki/4/4f/Newspaper.png');
+        background-image: url("https://static.miraheze.org/rctwiki/4/4f/Newspaper.png");
     }
 
     li#pt-preferences
     {
-        background-image: url('https://static.miraheze.org/rctwiki/7/7d/Gears.png');
+        background-image: url("https://static.miraheze.org/rctwiki/7/7d/Gears.png");
     }
 
     li#pt-watchlist
     {
-        background-image: url('https://static.miraheze.org/rctwiki/8/80/Watchlist-icon.png');
+        background-image: url("https://static.miraheze.org/rctwiki/8/80/Watchlist-icon.png");
     }
 
     li#pt-betafeatures
     {
-        background-image: url('https://static.miraheze.org/rctwiki/3/3f/Beta.png');
+        background-image: url("https://static.miraheze.org/rctwiki/3/3f/Beta.png");
     }
 
-    li#pt-userpage/*,
-li#pt-anonuserpage*/
+    li#pt-userpage,
+    li#pt-anonuserpage
     {
-        background-image: url('https://static.miraheze.org/rctwiki/3/31/Guest2.png');
+        background-image: url("https://static.miraheze.org/rctwiki/3/31/Guest2.png");
     }
 
     li#pt-login,
     li#pt-logout
     {
-        background-image: url('https://static.miraheze.org/rctwiki/2/28/Entrance.png');
-        background-position-y: 0px;
+        background-image: url("https://static.miraheze.org/rctwiki/2/28/Entrance.png");
+        background-position-y: 0;
     }
 
     li#pt-mytalk,
     li#pt-anontalk
     {
-        background-image: url('https://static.miraheze.org/rctwiki/c/c7/Chat.png');
+        background-image: url("https://static.miraheze.org/rctwiki/c/c7/Chat.png");
     }
 
     li#pt-mycontris,
     li#pt-anoncontribs
     {
-        background-image: url('https://static.miraheze.org/rctwiki/7/77/Shovel.png');
+        background-image: url("https://static.miraheze.org/rctwiki/7/77/Shovel.png");
+    }
+
+    li#pt-createaccount
+    {
+        background-image: url("https://static.miraheze.org/rctwiki/9/97/CreateAccount.png");
     }
 
     #pt-notifications-alert a,
@@ -255,13 +281,13 @@ li#pt-anonuserpage*/
     li#pt-watchlist a,
     li#pt-betafeatures a,
     li#pt-userpage a,
-    /*li#pt-anonuserpage a,*/
     li#pt-login a,
     li#pt-logout a,
     li#pt-mytalk a,
     li#pt-anontalk a,
     li#pt-mycontris a,
-    li#pt-anoncontribs a
+    li#pt-anoncontribs a,
+    li#pt-createaccount a
     {
         background-image: none;
         width: 26px;
@@ -282,13 +308,34 @@ li#pt-anonuserpage*/
     /* Footer */
     .mw-footer li
     {
-        color: #999999
+        color: #999999;
     }
 
     .mw-footer li a
     {
-        color: #66a5ff
+        color: var(--light-link);
     }
+}
+
+.main-page-game-thumbnail,
+.main-page-addon-thumbnail
+{
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #222;
+    overflow: hidden;
+}
+
+.main-page-game-thumbnail
+{
+    width: 140px;
+    height: 140px;
+}
+
+.main-page-addon-thumbnail
+{
+    width: 120px;
+    height: 120px;
 }
 
 
