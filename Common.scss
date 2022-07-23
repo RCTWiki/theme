@@ -338,5 +338,12 @@ body.skin-vector-legacy
     height: 120px;
 }
 
+div.ridebox-list
+{
+    display: flex;
+    flex-wrap: wrap;
 
-
+    > table {
+        width: auto;
+    }
+}

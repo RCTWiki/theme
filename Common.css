@@ -291,4 +291,10 @@ body.skin-vector-legacy {
   width: 120px;
   height: 120px; }
 
+div.ridebox-list {
+  display: flex;
+  flex-wrap: wrap; }
+  div.ridebox-list > table {
+    width: auto; }
+
 /*# sourceMappingURL=Common.css.map */
