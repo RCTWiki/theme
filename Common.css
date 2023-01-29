@@ -191,11 +191,13 @@ body.skin-vector {
           padding: 13px;
           border-bottom: 0 !important; }
         body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar *:not(#p-cactions) li.mw-list-item.selected {
-          background: var(--rct-grey-7);
+          background: var(--rct-white);
           border-top: 1px solid var(--rct-grey-9);
           border-left: 1px solid var(--rct-grey-9);
           border-right: 1px solid var(--rct-grey-5);
-          border-bottom: 1px solid var(--rct-grey-7); }
+          border-bottom: 1px solid var(--rct-white); }
+          body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar *:not(#p-cactions) li.mw-list-item.selected a {
+            color: black; }
         body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar *:not(#p-cactions) li.mw-list-item:not(.selected) {
           border-bottom-right-radius: 3px; }
       body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar #p-cactions {
@@ -213,11 +215,13 @@ body.skin-vector {
           padding: 13px;
           border-bottom: 0 !important; }
         body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar #p-cactions.selected {
-          background: var(--rct-grey-7);
+          background: var(--rct-white);
           border-top: 1px solid var(--rct-grey-9);
           border-left: 1px solid var(--rct-grey-9);
           border-right: 1px solid var(--rct-grey-5);
-          border-bottom: 1px solid var(--rct-grey-7); }
+          border-bottom: 1px solid var(--rct-white); }
+          body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar #p-cactions.selected a {
+            color: black; }
         body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar #p-cactions:not(.selected) {
           border-bottom-right-radius: 3px; }
         body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar #p-cactions label {
@@ -225,7 +229,7 @@ body.skin-vector {
           font-weight: bold;
           padding: 13px; }
     body.skin-vector div.mw-page-container #content #bodyContent {
-      background-color: var(--rct-grey-7);
+      background-color: var(--rct-white);
       padding: 1.0em;
       border-left: 1px solid var(--rct-grey-8);
       border-right: 1px solid var(--rct-grey-5);
@@ -251,7 +255,20 @@ body.skin-vector {
 div.ridebox-list {
   display: flex;
   flex-wrap: wrap; }
-  div.ridebox-list > table {
-    width: auto; }
+  div.ridebox-list > table.ridebox {
+    background-color: white;
+    border-top: 1px solid var(--rct-grey-9);
+    border-left: 1px solid var(--rct-grey-9);
+    border-right: 1px solid var(--rct-grey-5);
+    border-bottom: 1px solid var(--rct-grey-5);
+    margin: 5px;
+    border-radius: 4px; }
+    div.ridebox-list > table.ridebox img {
+      background-color: var(--rct-grey-7);
+      border-top: 1px solid var(--rct-grey-8);
+      border-left: 1px solid var(--rct-grey-8);
+      border-right: 1px solid var(--rct-grey-5);
+      border-bottom: 1px solid var(--rct-grey-5);
+      padding: 7px; }
 
 /*# sourceMappingURL=Common.css.map */

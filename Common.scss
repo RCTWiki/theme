@@ -106,11 +106,16 @@
 
     &.selected
     {
-        background: var(--rct-grey-7);
+        background: var(--rct-white);
         border-top: 1px solid var(--rct-grey-9);
         border-left: 1px solid var(--rct-grey-9);
         border-right: 1px solid var(--rct-grey-5);
-        border-bottom: 1px solid var(--rct-grey-7);
+        border-bottom: 1px solid var(--rct-white);
+
+        a
+        {
+            color: black;
+        }
     }
 
     &:not(.selected)
@@ -299,7 +304,7 @@ body.skin-vector
             // Contents
             #bodyContent
             {
-                background-color: var(--rct-grey-7);
+                background-color: var(--rct-white);
                 padding: 1.0em;
                 border-left: 1px solid var(--rct-grey-8);
                 border-right: 1px solid var(--rct-grey-5);
