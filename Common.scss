@@ -345,7 +345,24 @@ div.ridebox-list
     display: flex;
     flex-wrap: wrap;
 
-    > table {
-        width: auto;
+    > table.ridebox
+    {
+        background-color: white;
+        border-top: 1px solid var(--rct-grey-9);
+        border-left: 1px solid var(--rct-grey-9);
+        border-right: 1px solid var(--rct-grey-5);
+        border-bottom: 1px solid var(--rct-grey-5);
+        margin: 5px;
+        border-radius: 4px;
+
+        img
+        {
+            background-color: var(--rct-grey-7);
+            border-top: 1px solid var( --rct-grey-8);
+            border-left: 1px solid var( --rct-grey-8);
+            border-right: 1px solid var(--rct-grey-5);
+            border-bottom: 1px solid var(--rct-grey-5);
+            padding: 7px;
+        }
     }
 }
