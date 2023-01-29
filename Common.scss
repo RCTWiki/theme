@@ -17,11 +17,301 @@
     --rct-gold-darker: #773f00;
     --rct-dark-gold: #4b2200;
     --light-link: #66a5ff;
+
+    --rct-indian-red-0: #230000;
+    --rct-indian-red-1: #4F0000;
+    --rct-indian-red-2: #5F0707; // E.g. window title bar backgrounds.
+    --rct-indian-red-3: #6F0F0F;
+    --rct-indian-red-4: #7F1B1B;
+    --rct-indian-red-5: #8F2727;
+    --rct-indian-red-6: #A33B3B;
+    --rct-indian-red-7: #B34F4F;
+    --rct-indian-red-8: #C76767;
+    --rct-indian-red-9: #D77F7F;
+    --rct-indian-red-10: #EB9F9F;
+    --rct-indian-red-11: #FFBFBF;
+
+    --rct-grey-0: #172323;
+    --rct-grey-1: #233333;
+    --rct-grey-2: #2F4343;
+    --rct-grey-3: #3F5353;
+    --rct-grey-4: #4B6363;
+    --rct-grey-5: #5B7373;
+    --rct-grey-6: #6F8383;
+    --rct-grey-7: #839797;
+    --rct-grey-8: #9FAFAF;
+    --rct-grey-9: #B7C3C3;
+    --rct-grey-10: #D3DBDB;
+    --rct-grey-11: #EFF3F3;
+
+}
+
+@mixin window-title()
+{
+    background-color: var(--rct-indian-red-2);
+    padding: 2px;
+    color: var(--rct-white-lighter);
+    text-align: center;
+    font-weight: bold;
+    border-top: 1px solid var(--rct-indian-red-5);
+    border-left: 1px solid var(--rct-indian-red-5);
+    border-right: 1px solid var(--rct-indian-red-8);
+    border-bottom: 1px solid var(--rct-indian-red-8);
+
+    //h1, h2, h3, h4, h5, h6
+    //{
+        //color: var(--rct-white-lighter);
+        font-family: sans-serif;
+        //border-bottom: 0;
+    //}
+}
+
+@mixin button()
+{
+    background-color: var(--rct-grey-7);
+    border-top: 1px solid var( --rct-grey-8);
+    border-left: 1px solid var( --rct-grey-8);
+    border-right: 1px solid var(--rct-grey-5);
+    border-bottom: 1px solid var(--rct-grey-5);
+
+    font-weight: bold;
+    color: white;
+}
+
+@mixin button-top-toolbar()
+{
+    @include button;
+    height: 44px;
+    width: 44px;
+}
+
+@mixin big-tab
+{
+    margin: 2px 0 -1px 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: var(--rct-grey-6);
+    border-top: 1px solid var(--rct-grey-8);
+    border-left: 1px solid var(--rct-grey-8);
+    border-right: 1px solid var(--rct-grey-4);
+    border-bottom: 1px solid var(--rct-grey-9);
+
+    a
+    {
+        color: white;
+        font-weight: bold;
+        padding: 13px;
+        border-bottom: 0 !important;
+    }
+
+    &.selected
+    {
+        background: var(--rct-grey-7);
+        border-top: 1px solid var(--rct-grey-9);
+        border-left: 1px solid var(--rct-grey-9);
+        border-right: 1px solid var(--rct-grey-5);
+        border-bottom: 1px solid var(--rct-grey-7);
+    }
+
+    &:not(.selected)
+    {
+        // To hide a stray pixel
+        border-bottom-right-radius: 3px;
+    }
 }
 
 body.skin-vector
 {
     background: url("https://static.miraheze.org/rctwiki/0/01/Mowedgrass.png");
+
+    div.mw-page-container
+    {
+        background-color: transparent;
+
+        header.mw-header
+        {
+            #mw-sidebar-button
+            {
+                @include button-top-toolbar;
+            }
+
+            nav.vector-user-links
+            {
+                ul.vector-menu-content-list
+                {
+                    > #pt-userpage-2
+                    {
+                        @include button-top-toolbar;
+                        width: auto;
+                        display: inline-flex;
+                        align-items: center;
+                    }
+
+                    > #pt-notifications-alert
+                    {
+                        @include button-top-toolbar;
+
+                        a
+                        {
+                            background-image: url("https://static.miraheze.org/rctwiki/7/74/Notifications.png");
+                        }
+                    }
+
+                    > #pt-notifications-notice
+                    {
+                        @include button-top-toolbar;
+
+                        a
+                        {
+                            background-image: url("https://static.miraheze.org/rctwiki/4/4f/Newspaper.png");
+                        }
+                    }
+
+                    > #pt-watchlist-2
+                    {
+                        @include button-top-toolbar;
+
+                        a:before
+                        {
+                            background-image: url("https://static.miraheze.org/rctwiki/8/80/Watchlist-icon.png");
+                        }
+                    }
+                }
+            }
+
+            #p-personal
+            {
+                @include button-top-toolbar;
+            }
+        }
+
+        #mw-panel
+        {
+            background-color: transparent;
+
+            > *
+            {
+                padding: 0;
+                background-color: var(--rct-indian-red);
+                border-top: 1px solid var(--rct-indian-red-lighter);
+                border-left: 1px solid var(--rct-indian-red-lighter);
+                border-right: 1px solid var(--rct-indian-red-darker);
+                border-bottom: 1px solid var(--rct-indian-red-darker);
+                margin-left: 0;
+                margin-right: 0;
+
+                + *
+                {
+                    margin-top: 1em;
+                }
+
+                > *:first-child
+                {
+                    @include window-title;
+                    margin: 0;
+
+                }
+                > *:nth-child(2)
+                {
+                    margin-left: 0;
+                    padding-bottom: 0.3em;
+
+                    li
+                    {
+                        padding-left: 0.5em;
+                    }
+
+                    li:hover
+                    {
+                        background-color: var(--rct-indian-red-5);
+                    }
+
+                    a
+                    {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        #content
+        {
+            // Title bar
+            > header
+            {
+                h1
+                {
+                    @include window-title;
+                    border-top: 1px solid var(--rct-indian-red-8);
+                    border-left: 1px solid var(--rct-indian-red-8);
+                    border-right: 1px solid var(--rct-indian-red-4);
+                }
+
+            }
+
+            // Tab bar
+            > nav.vector-article-toolbar
+            {
+                background-color: var(--rct-indian-red-6);
+                border-left: 1px solid var(--rct-indian-red-8);
+                border-right: 1px solid var(--rct-indian-red-4);
+                border-bottom: 1px solid var(--rct-grey-8);
+                padding-left: 2px;
+                padding-right: 2px;
+
+                .mw-article-toolbar-container
+                {
+                    border-bottom: 0;
+                }
+
+                #left-navigation
+                {
+                    margin-left: 0;
+                }
+
+                #right-navigation
+                {
+                    margin-right: 0;
+                }
+
+                // Tab
+                *:not(#p-cactions)
+                {
+                    li.mw-list-item
+                    {
+                        @include big-tab;
+                    }
+                }
+
+                #p-cactions
+                {
+                    @include big-tab;
+
+                    label
+                    {
+                        color: white;
+                        font-weight: bold;
+                        padding: 13px;
+                    }
+                }
+            }
+
+            // Contents
+            #bodyContent
+            {
+                background-color: var(--rct-grey-7);
+                padding: 1.0em;
+                border-left: 1px solid var(--rct-grey-8);
+                border-right: 1px solid var(--rct-grey-5);
+                border-bottom: 1px solid var(--rct-grey-5);
+
+                #mw-content-text
+                {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
 }
 
 .main-page-game-thumbnail,
