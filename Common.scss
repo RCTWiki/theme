@@ -357,12 +357,11 @@ div.ridebox-list
 
         img
         {
-            background-color: var(--rct-grey-7);
-            border-top: 1px solid var( --rct-grey-8);
-            border-left: 1px solid var( --rct-grey-8);
-            border-right: 1px solid var(--rct-grey-5);
-            border-bottom: 1px solid var(--rct-grey-5);
-            padding: 7px;
+            margin-top: 1.0em;
+            -webkit-mask-image: url(https://static.miraheze.org/rctwiki/9/93/Feathered-border.png);
+            mask-image: url(https://static.miraheze.org/rctwiki/9/93/Feathered-border.png);
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
         }
     }
 }
