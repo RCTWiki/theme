@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --rct-indian-red: #b34f4f;
   --rct-indian-red-lighter: #c76767;
@@ -40,7 +41,19 @@
   --rct-grey-8: #9FAFAF;
   --rct-grey-9: #B7C3C3;
   --rct-grey-10: #D3DBDB;
-  --rct-grey-11: #EFF3F3; }
+  --rct-grey-11: #EFF3F3;
+  --rct-blue-0: #001b6f;
+  --rct-blue-1: #002797;
+  --rct-blue-2: #0733a7;
+  --rct-blue-3: #0f43bb;
+  --rct-blue-4: #1b53cb;
+  --rct-blue-5: #2b67df;
+  --rct-blue-6: #4387e3;
+  --rct-blue-7: #5ba3e7;
+  --rct-blue-8: #77bbef;
+  --rct-blue-9: #8fd3f3;
+  --rct-blue-10: #afe7fb;
+  --rct-blue-11: #d7f7ff; }
 
 body.skin-vector {
   background: url("https://static.miraheze.org/rctwiki/0/01/Mowedgrass.png"); }
@@ -115,68 +128,135 @@ body.skin-vector {
       color: white;
       height: 44px;
       width: 44px; }
-    body.skin-vector div.mw-page-container #mw-panel {
-      background-color: transparent; }
-      body.skin-vector div.mw-page-container #mw-panel > * {
-        padding: 0;
-        background-color: var(--rct-indian-red);
-        border-top: 1px solid var(--rct-indian-red-lighter);
-        border-left: 1px solid var(--rct-indian-red-lighter);
-        border-right: 1px solid var(--rct-indian-red-darker);
-        border-bottom: 1px solid var(--rct-indian-red-darker);
+    body.skin-vector div.mw-page-container #vector-page-tools .vector-menu {
+      background-color: var(--rct-indian-red);
+      border-top: 1px solid var(--rct-indian-red-5);
+      border-left: 1px solid var(--rct-indian-red-5);
+      border-right: 1px solid var(--rct-indian-red-8);
+      border-bottom: 1px solid var(--rct-indian-red-8); }
+      body.skin-vector div.mw-page-container #vector-page-tools .vector-menu > *:first-child {
+        padding: 2px;
+        color: var(--rct-white-lighter);
+        text-align: center;
+        font-weight: bold;
+        font-family: sans-serif;
+        background-color: var(--rct-blue-1);
+        border-top: 1px solid var(--rct-blue-5);
+        border-left: 1px solid var(--rct-blue-5);
+        border-right: 1px solid var(--rct-blue-8);
+        border-bottom: 1px solid var(--rct-blue-8);
+        margin: 0; }
+      body.skin-vector div.mw-page-container #vector-page-tools .vector-menu > *:nth-child(2) {
         margin-left: 0;
-        margin-right: 0; }
-        body.skin-vector div.mw-page-container #mw-panel > * + * {
+        padding-bottom: 0.3em; }
+        body.skin-vector div.mw-page-container #vector-page-tools .vector-menu > *:nth-child(2) li {
+          padding-left: 0.5em; }
+        body.skin-vector div.mw-page-container #vector-page-tools .vector-menu > *:nth-child(2) li:hover {
+          background-color: var(--rct-indian-red-5); }
+        body.skin-vector div.mw-page-container #vector-page-tools .vector-menu > *:nth-child(2) a {
+          color: white; }
+    body.skin-vector div.mw-page-container #mw-panel #vector-main-menu {
+      background-color: var(--rct-blue-7);
+      border-top: 1px solid var(--rct-blue-8);
+      border-left: 1px solid var(--rct-blue-8);
+      border-right: 1px solid var(--rct-blue-5);
+      border-bottom: 1px solid var(--rct-blue-5);
+      padding: 0; }
+      body.skin-vector div.mw-page-container #mw-panel #vector-main-menu .vector-main-menu-pinnable-header {
+        padding: 2px;
+        color: var(--rct-white-lighter);
+        text-align: center;
+        font-weight: bold;
+        font-family: sans-serif;
+        background-color: var(--rct-blue-1);
+        border-top: 1px solid var(--rct-blue-5);
+        border-left: 1px solid var(--rct-blue-5);
+        border-right: 1px solid var(--rct-blue-8);
+        border-bottom: 1px solid var(--rct-blue-8);
+        display: flex;
+        padding: 0; }
+        body.skin-vector div.mw-page-container #mw-panel #vector-main-menu .vector-main-menu-pinnable-header .vector-pinnable-header-label {
+          color: #ffffff;
+          flex-grow: 1; }
+        body.skin-vector div.mw-page-container #mw-panel #vector-main-menu .vector-main-menu-pinnable-header .vector-pinnable-header-unpin-button {
+          width: 18px;
+          height: 18px;
+          border-width: 1px;
+          border-style: solid;
+          overflow: hidden;
+          display: inline-block;
+          color: transparent;
+          position: relative;
+          background-color: var(--rct-blue-7);
+          border-top-color: var(--rct-blue-8);
+          border-left-color: var(--rct-blue-8);
+          border-right-color: var(--rct-blue-5);
+          border-bottom-color: var(--rct-blue-5); }
+          body.skin-vector div.mw-page-container #mw-panel #vector-main-menu .vector-main-menu-pinnable-header .vector-pinnable-header-unpin-button::before {
+            content: '×';
+            color: black;
+            width: 16px;
+            position: absolute;
+            line-height: 14px; }
+      body.skin-vector div.mw-page-container #mw-panel #vector-main-menu .vector-main-menu-action-opt-out {
+        display: none; }
+      body.skin-vector div.mw-page-container #mw-panel #vector-main-menu .vector-menu {
+        border-top: 1px solid var(--rct-blue-8);
+        border-left: 1px solid var(--rct-blue-8);
+        border-right: 1px solid var(--rct-blue-5);
+        border-bottom: 1px solid var(--rct-blue-5);
+        position: relative;
+        margin: 15px 5px 5px 5px;
+        padding: 0; }
+        body.skin-vector div.mw-page-container #mw-panel #vector-main-menu .vector-menu > * {
+          border-top: 1px solid var(--rct-blue-5);
+          border-left: 1px solid var(--rct-blue-5);
+          border-right: 1px solid var(--rct-blue-8);
+          border-bottom: 1px solid var(--rct-blue-8); }
+        body.skin-vector div.mw-page-container #mw-panel #vector-main-menu .vector-menu + * {
           margin-top: 1em; }
-        body.skin-vector div.mw-page-container #mw-panel > * > *:first-child {
-          background-color: var(--rct-indian-red-2);
-          padding: 2px;
-          color: var(--rct-white-lighter);
-          text-align: center;
-          font-weight: bold;
-          border-top: 1px solid var(--rct-indian-red-5);
-          border-left: 1px solid var(--rct-indian-red-5);
-          border-right: 1px solid var(--rct-indian-red-8);
-          border-bottom: 1px solid var(--rct-indian-red-8);
-          font-family: sans-serif;
-          margin: 0; }
-        body.skin-vector div.mw-page-container #mw-panel > * > *:nth-child(2) {
-          margin-left: 0;
-          padding-bottom: 0.3em; }
-          body.skin-vector div.mw-page-container #mw-panel > * > *:nth-child(2) li {
-            padding-left: 0.5em; }
-          body.skin-vector div.mw-page-container #mw-panel > * > *:nth-child(2) li:hover {
-            background-color: var(--rct-indian-red-5); }
-          body.skin-vector div.mw-page-container #mw-panel > * > *:nth-child(2) a {
+        body.skin-vector div.mw-page-container #mw-panel #vector-main-menu .vector-menu .vector-menu-heading {
+          position: absolute;
+          color: white;
+          border: 0;
+          left: 7px;
+          top: -15px;
+          background: var(--rct-blue-7);
+          font-weight: bold; }
+        body.skin-vector div.mw-page-container #mw-panel #vector-main-menu .vector-menu .vector-menu-content {
+          padding: 15px 5px 5px 5px; }
+          body.skin-vector div.mw-page-container #mw-panel #vector-main-menu .vector-menu .vector-menu-content ul li a, body.skin-vector div.mw-page-container #mw-panel #vector-main-menu .vector-menu .vector-menu-content ul li a:visited {
             color: white; }
     body.skin-vector div.mw-page-container #content > header h1 {
-      background-color: var(--rct-indian-red-2);
       padding: 2px;
       color: var(--rct-white-lighter);
       text-align: center;
       font-weight: bold;
-      border-top: 1px solid var(--rct-indian-red-5);
-      border-left: 1px solid var(--rct-indian-red-5);
-      border-right: 1px solid var(--rct-indian-red-8);
-      border-bottom: 1px solid var(--rct-indian-red-8);
       font-family: sans-serif;
+      background-color: var(--rct-indian-red-2);
+      border-top: 1px solid var(--rct-indian-red-8);
+      border-left: 1px solid var(--rct-indian-red-8);
+      border-right: 1px solid var(--rct-indian-red-5);
+      border-bottom: 1px solid var(--rct-indian-red-5);
       border-top: 1px solid var(--rct-indian-red-8);
       border-left: 1px solid var(--rct-indian-red-8);
       border-right: 1px solid var(--rct-indian-red-4); }
-    body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar {
+    body.skin-vector div.mw-page-container #content .vector-page-toolbar {
       background-color: var(--rct-indian-red-6);
       border-left: 1px solid var(--rct-indian-red-8);
       border-right: 1px solid var(--rct-indian-red-4);
-      border-bottom: 1px solid var(--rct-grey-8);
+      border-bottom: 0;
       padding-left: 2px;
       padding-right: 2px; }
-      body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar .mw-article-toolbar-container {
-        border-bottom: 0; }
-      body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar #left-navigation {
+      body.skin-vector div.mw-page-container #content .vector-page-toolbar .vector-page-toolbar-container {
+        box-shadow: none; }
+      body.skin-vector div.mw-page-container #content .vector-page-toolbar #left-navigation {
         margin-left: 0; }
-      body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar #right-navigation {
+      body.skin-vector div.mw-page-container #content .vector-page-toolbar #right-navigation {
         margin-right: 0; }
-      body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar *:not(#p-cactions) li.mw-list-item {
+      body.skin-vector div.mw-page-container #content .vector-page-toolbar .vector-page-toolbar-container {
+        border-bottom: 0; }
+      body.skin-vector div.mw-page-container #content .vector-page-toolbar .vector-menu-content-list > li {
         margin: 2px 0 -1px 0;
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
@@ -184,50 +264,24 @@ body.skin-vector {
         border-top: 1px solid var(--rct-grey-8);
         border-left: 1px solid var(--rct-grey-8);
         border-right: 1px solid var(--rct-grey-4);
-        border-bottom: 1px solid var(--rct-grey-9); }
-        body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar *:not(#p-cactions) li.mw-list-item a {
+        border-bottom: 0;
+        height: 44px; }
+        body.skin-vector div.mw-page-container #content .vector-page-toolbar .vector-menu-content-list > li a {
           color: white;
           font-weight: bold;
           padding: 13px;
           border-bottom: 0 !important; }
-        body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar *:not(#p-cactions) li.mw-list-item.selected {
+        body.skin-vector div.mw-page-container #content .vector-page-toolbar .vector-menu-content-list > li.selected {
           background: var(--rct-white);
           border-top: 1px solid var(--rct-grey-9);
           border-left: 1px solid var(--rct-grey-9);
-          border-right: 1px solid var(--rct-grey-5);
-          border-bottom: 1px solid var(--rct-white); }
-          body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar *:not(#p-cactions) li.mw-list-item.selected a {
+          border-right: 1px solid var(--rct-grey-5); }
+          body.skin-vector div.mw-page-container #content .vector-page-toolbar .vector-menu-content-list > li.selected a {
             color: black; }
-        body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar *:not(#p-cactions) li.mw-list-item:not(.selected) {
+        body.skin-vector div.mw-page-container #content .vector-page-toolbar .vector-menu-content-list > li:not(.selected) {
           border-bottom-right-radius: 3px; }
-      body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar #p-cactions {
-        margin: 2px 0 -1px 0;
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
-        background: var(--rct-grey-6);
-        border-top: 1px solid var(--rct-grey-8);
-        border-left: 1px solid var(--rct-grey-8);
-        border-right: 1px solid var(--rct-grey-4);
-        border-bottom: 1px solid var(--rct-grey-9); }
-        body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar #p-cactions a {
-          color: white;
-          font-weight: bold;
-          padding: 13px;
-          border-bottom: 0 !important; }
-        body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar #p-cactions.selected {
-          background: var(--rct-white);
-          border-top: 1px solid var(--rct-grey-9);
-          border-left: 1px solid var(--rct-grey-9);
-          border-right: 1px solid var(--rct-grey-5);
-          border-bottom: 1px solid var(--rct-white); }
-          body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar #p-cactions.selected a {
-            color: black; }
-        body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar #p-cactions:not(.selected) {
-          border-bottom-right-radius: 3px; }
-        body.skin-vector div.mw-page-container #content > nav.vector-article-toolbar #p-cactions label {
-          color: white;
-          font-weight: bold;
-          padding: 13px; }
+        body.skin-vector div.mw-page-container #content .vector-page-toolbar .vector-menu-content-list > li .mw-ui-icon {
+          margin-top: 0; }
     body.skin-vector div.mw-page-container #content #bodyContent {
       background-color: var(--rct-white);
       padding: 1.0em;
@@ -236,6 +290,22 @@ body.skin-vector {
       border-bottom: 1px solid var(--rct-grey-5); }
       body.skin-vector div.mw-page-container #content #bodyContent #mw-content-text {
         margin-top: 0; }
+  body.skin-vector #vector-main-menu-dropdown-checkbox {
+    background-color: var(--rct-grey-7);
+    border-top: 1px solid var(--rct-grey-8);
+    border-left: 1px solid var(--rct-grey-8);
+    border-right: 1px solid var(--rct-grey-5);
+    border-bottom: 1px solid var(--rct-grey-5);
+    font-weight: bold;
+    color: white; }
+  body.skin-vector .vector-limited-width-toggle {
+    background-color: var(--rct-grey-7);
+    border-top: 1px solid var(--rct-grey-8);
+    border-left: 1px solid var(--rct-grey-8);
+    border-right: 1px solid var(--rct-grey-5);
+    border-bottom: 1px solid var(--rct-grey-5);
+    font-weight: bold;
+    color: white; }
 
 .main-page-game-thumbnail,
 .main-page-addon-thumbnail {
